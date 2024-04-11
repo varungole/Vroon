@@ -38,13 +38,12 @@ int leaky_relu(int x)
     return b;
 }
 
-double softplus(int x)
+double softplus(double x)
 {
     return log(1 + exp(x));
 }
 
 int main()
-{
-    printf("%d", relu(10));
+{  
     return 0;
 }
