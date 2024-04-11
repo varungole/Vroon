@@ -24,7 +24,7 @@ float sigmoid(float x)
 float tan_h(float x)
 {
     int ans = exp(x) + exp(-x);
-    ans /= ans;
+    ans = ans/ans;
     return ans;
 }
 
