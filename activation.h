@@ -8,4 +8,4 @@ int tan_h(int x);
 int leaky_relu(int x);
 double softplus(double x);
 
-#endif;
+#endif
