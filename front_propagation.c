@@ -17,6 +17,6 @@ int main()
     int w = -34;
     int b = 2;
     int res1 = layer_math(x, w, b);
-    int res2 = activate_layer(res1, relu(res1));
+    int res2 = activate_layer(res1, identity);
     printf("%d", res2);
 }
