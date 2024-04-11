@@ -1,11 +1,11 @@
 #ifndef ACTIVATION_FUNCTIONS_H
 #define ACTIVATION_FUNCTIONS_H
 
-int relu(int x);
-int identity(int x);
-int sigmoid(int x);
-int tan_h(int x);
-int leaky_relu(int x);
-double softplus(double x);
+float relu(float x);
+float identity(float x);
+float sigmoid(float x);
+float tan_h(float x);
+float leaky_relu(float x);
+float softplus(float x);
 
 #endif

@@ -1,22 +1,32 @@
 #include<stdio.h>
 #include "activation.h"
 
-int layer_math(int x, int w , int b)
+float layer_1(float x, float w1 , float b1)
 {
-      return x * w +b;
+      return (x * w1) +b1;
 }
 
-int activate_layer(int x, int(*activation_function)(int))
+float layer_2(float x, float w2, float b2)
+{
+    return (x * w2) + b2;
+}
+
+float layer_3(float x, float w3)
+{
+    return x * w3;
+}
+
+float layer_4(float x, float w4)
+{
+    return x * w4;
+}
+
+float activate_layer(float x, float(*activation_function)(float))
 {
        return activation_function(x);
 }
 
 int main()
 {
-    int x = 0;
-    int w = -34;
-    int b = 2;
-    int res1 = layer_math(x, w, b);
-    int res2 = activate_layer(res1, sigmoid);
-    printf("%d", res2);
+
 }

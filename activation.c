@@ -2,7 +2,7 @@
 #include<math.h>
 #include "activation.h"
 
-int relu(int x)
+float relu(float x)
 {
     if(x > 0)
     {
@@ -11,27 +11,27 @@ int relu(int x)
     return 0;
 }
 
-int identity(int x)
+float identity(float x)
 {
     return x;
 }
 
-int sigmoid(int x)
+float sigmoid(float x)
 {
     return 1/1+(exp(-x));
 }
 
-int tan_h(int x)
+float tan_h(float x)
 {
     int ans = exp(x) + exp(-x);
     ans /= ans;
     return ans;
 }
 
-int leaky_relu(int x)
+float leaky_relu(float x)
 {
-    int a = 0.01*x;
-    int b = x;
+    float a = 0.01*x;
+    float b = x;
     if(a>b)
     {
         return a;
@@ -39,7 +39,7 @@ int leaky_relu(int x)
     return b;
 }
 
-double softplus(double x)
+float softplus(float x)
 {
-    return log(1 + exp(x));
+    return logf(1.0f + expf(x));
 }
