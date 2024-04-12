@@ -6,5 +6,6 @@
 #include "loss_function.h"
 #include "optimizer.h"
 #include "wb_initialization.h"
+#include "front_propagation.h"
 
 #endif

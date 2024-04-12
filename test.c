@@ -12,12 +12,10 @@ int main()
      Layer layer2;
      layer2.weight = 1;
      layer2.bias = 1;
+      
+     float result = front_propagation(&layer1, input, relu);
 
-     float result_1 = layer1.weight*input + layer1.bias;
-
-     float result_2 = sigmoid(result_1);
-
-     printf("%f", result_2);
+     printf("%f", result);
      
      return 0;
 }
