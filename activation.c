@@ -23,20 +23,14 @@ float sigmoid(float x)
 
 float tan_h(float x)
 {
-    int ans = exp(x) + exp(-x);
-    ans = ans/ans;
-    return ans;
+    float epx = exp(x);
+    float enx = exp(-x);
+    return (epx - enx) / (epx + enx);
 }
 
 float leaky_relu(float x)
 {
-    float a = 0.01*x;
-    float b = x;
-    if(a>b)
-    {
-        return a;
-    }
-    return b;
+   return (x > 0 ?  x : 0.01 * x);
 }
 
 float softplus(float x)
