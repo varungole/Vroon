@@ -25,8 +25,3 @@ float activate_layer(float x, float(*activation_function)(float))
 {
        return activation_function(x);
 }
-
-int main()
-{
-
-}
