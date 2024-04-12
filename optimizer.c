@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-float gradient_descent(float slope, float learning_rate)
+float update_parameter(float param, float grad, float learning_rate)
 {
-    slope -= learning_rate * slope;
-    return slope;
+    param -= learning_rate * grad;
+    return param;
 }
