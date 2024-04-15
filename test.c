@@ -8,14 +8,10 @@ int main()
      Layer layer1;
      layer1.weight = 1;
      layer1.bias = 1;
-
-     Layer layer2;
-     layer2.weight = 1;
-     layer2.bias = 1;
       
-     float result = front_propagation(&layer1, input, relu);
+     float result = front_propagation(&layer1, input, identity);
 
-     printf("%f", result);
+     printf("%f\n" , result);
      
      return 0;
 }

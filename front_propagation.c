@@ -4,9 +4,9 @@
 
 typedef float (*ActivationFunction) (float);
 
-int front_propagation(Layer *layer, float input, ActivationFunction activation_function)
+float front_propagation(Layer *layer, float input, ActivationFunction activation_function)
 {
-    float weighted_sum = ((layer->weight * input) + layer->bias);
-    float result = activation_function(weighted_sum);
+    float result = input * layer->weight + layer->bias;
+    result = activation_function(result);
     return result;
 }

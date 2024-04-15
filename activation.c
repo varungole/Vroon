@@ -4,11 +4,7 @@
 
 float relu(float x)
 {
-    if(x > 0)
-    {
-        return x;
-    }
-    return 0;
+    return (x > 0 ? x : 0);
 }
 
 float identity(float x)
