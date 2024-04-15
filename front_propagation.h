@@ -6,6 +6,6 @@
 
 typedef float (*ActivationFunction)(float);
 
-int front_propagation(Layer *layer1, float input, ActivationFunction activation_function);
+float front_propagation(Layer *layer1, float input, ActivationFunction activation_function);
 
 #endif
